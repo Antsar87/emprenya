@@ -9,16 +9,8 @@
 }
 
 html {
-  font-size: 37.5%;
+  font-size: 50%;
   scroll-behavior: smooth;
-
-  @include for-size('phone-only') {
-    font-size: 50%;
-  }
-
-  @include for-size('tablet-portrait-up') {
-    font-size: 62.5%;
-  }
 }
 
 body {

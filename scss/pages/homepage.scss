@@ -10,7 +10,7 @@
 .header {
   flex-direction: column;
 
-  @include for-size(1250px) {
+  @include for-size(1000px) {
     flex-direction: row;
   }
 
@@ -29,7 +29,9 @@
   &__esquema {
     flex: 2;
     img {
-      width: 100%;
+      width:100%;
+      max-width: 90rem;
+      
     }
   }
 }
@@ -97,7 +99,7 @@
     }
 
     article {
-        box-shadow: 0 0 1rem $c-black;
+      box-shadow: 0 0 1rem $c-black;
       @include minmax(35rem);
       img {
         height: 13rem;

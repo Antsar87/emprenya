@@ -1,7 +1,7 @@
 .header {
   flex-direction: column;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1000px) {
   .header {
     flex-direction: row;
   }
@@ -21,6 +21,7 @@
 }
 .header__esquema img {
   width: 100%;
+  max-width: 90rem;
 }
 
 .revolucion {
