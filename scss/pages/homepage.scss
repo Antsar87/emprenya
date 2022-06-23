@@ -1,0 +1,107 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+@mixin minmax($width) {
+  flex: 1;
+  min-width: $width;
+  max-width: $width;
+}
+
+.header {
+  flex-direction: column;
+
+  @include for-size(1250px) {
+    flex-direction: row;
+  }
+
+  &__content {
+    flex: 1;
+    img {
+      width: 45rem;
+      height: 15rem;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+  }
+
+  &__esquema {
+    flex: 2;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.revolucion {
+  background: url('../images/bienvenida.jpg') center center / cover;
+
+  article {
+    @include minmax(30rem);
+
+    img {
+      height: 10rem;
+    }
+    p {
+      line-height: 1.5em;
+    }
+  }
+}
+
+.emprenya {
+  article {
+    @include minmax(25rem);
+
+    img {
+      height: 8rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.naceEmprenya {
+  &__content {
+    margin-top: -0.9rem;
+  }
+  article {
+    flex: 1;
+    min-width: 40rem;
+
+    img {
+      height: 8rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.clubReconocimiento {
+  &__content {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 90%;
+      background: $c-blue;
+      width: 100%;
+      z-index: -1;
+      top: 30%;
+    }
+
+    article {
+        box-shadow: 0 0 1rem $c-black;
+      @include minmax(35rem);
+      img {
+        height: 13rem;
+      }
+    }
+  }
+}

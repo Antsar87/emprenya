@@ -1,0 +1,60 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.nav {
+  &__top {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    & > a {
+      color: $c-white;
+    }
+
+    .registro {
+      border-right: 1px solid $c-white;
+      padding-right: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__center {
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 4rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: $c-blue;
+      height: 0.1rem;
+      width: 60%;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    div {
+      text-align: center;
+      flex: 1;
+
+      img {
+        object-fit: cover;
+        height: 2.5rem;
+      }
+
+      .logo--1 {
+        height: 6rem;
+      }
+    }
+
+    @include for-size('tablet-landscape-up') {
+      div {
+        flex: initial;
+      }
+
+      .box--2 {
+        margin-left: auto;
+      }
+    }
+  }
+}

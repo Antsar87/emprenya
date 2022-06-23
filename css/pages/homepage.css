@@ -1,0 +1,91 @@
+.header {
+  flex-direction: column;
+}
+@media (min-width: 1250px) {
+  .header {
+    flex-direction: row;
+  }
+}
+.header__content {
+  flex: 1;
+}
+.header__content img {
+  width: 45rem;
+  height: 15rem;
+}
+.header__content p {
+  line-height: 1.5em;
+}
+.header__esquema {
+  flex: 2;
+}
+.header__esquema img {
+  width: 100%;
+}
+
+.revolucion {
+  background: url("../images/bienvenida.jpg") center center/cover;
+}
+.revolucion article {
+  flex: 1;
+  min-width: 30rem;
+  max-width: 30rem;
+}
+.revolucion article img {
+  height: 10rem;
+}
+.revolucion article p {
+  line-height: 1.5em;
+}
+
+.emprenya article {
+  flex: 1;
+  min-width: 25rem;
+  max-width: 25rem;
+}
+.emprenya article img {
+  height: 8rem;
+}
+.emprenya article p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.naceEmprenya__content {
+  margin-top: -0.9rem;
+}
+.naceEmprenya article {
+  flex: 1;
+  min-width: 40rem;
+}
+.naceEmprenya article img {
+  height: 8rem;
+}
+.naceEmprenya article p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.clubReconocimiento__content {
+  position: relative;
+}
+.clubReconocimiento__content::after {
+  content: "";
+  position: absolute;
+  height: 90%;
+  background: #3c66b9;
+  width: 100%;
+  z-index: -1;
+  top: 30%;
+}
+.clubReconocimiento__content article {
+  box-shadow: 0 0 1rem #272626;
+  flex: 1;
+  min-width: 35rem;
+  max-width: 35rem;
+}
+.clubReconocimiento__content article img {
+  height: 13rem;
+}
+
+/*# sourceMappingURL=homepage.css.map */

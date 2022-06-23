@@ -24,6 +24,326 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.pT-5 {
+  padding-top: 5rem;
+}
+
+.pB-3 {
+  padding-bottom: 3rem;
+}
+
+.pY-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pY-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pY-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pX-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.pX-3 {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.pX-5 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.pX-8 {
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+
+.mL-auto {
+  margin-left: auto;
+}
+
+.mT-1 {
+  margin-top: 1rem;
+}
+
+.mT-3 {
+  margin-top: 3rem;
+}
+
+.mT-5 {
+  margin-top: 5rem;
+}
+
+.mR-1 {
+  margin-right: 1rem;
+}
+
+.mR-2 {
+  margin-right: 2rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.font-jost {
+  font-family: "Jost", sans-serif;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-blue {
+  color: #3c66b9;
+}
+
+.c-blue-light {
+  color: #a8d1ff;
+}
+
+.c-blue-light2 {
+  color: #7cb2ee;
+}
+
+.c-blue-light3 {
+  color: #5389f6;
+}
+
+.bg-blue {
+  background: #3c66b9;
+}
+
+.bg-gray {
+  background: #eee;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.nav__top {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.nav__top > a {
+  color: #fff;
+}
+.nav__top .registro {
+  border-right: 1px solid #fff;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+}
+.nav__center {
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 4rem;
+}
+.nav__center::after {
+  content: "";
+  position: absolute;
+  background: #3c66b9;
+  height: 0.1rem;
+  width: 60%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav__center div {
+  text-align: center;
+  flex: 1;
+}
+.nav__center div img {
+  object-fit: cover;
+  height: 2.5rem;
+}
+.nav__center div .logo--1 {
+  height: 6rem;
+}
+@media (min-width: 900px) {
+  .nav__center div {
+    flex: initial;
+  }
+  .nav__center .box--2 {
+    margin-left: auto;
+  }
+}
+
+.header {
+  flex-direction: column;
+}
+@media (min-width: 1250px) {
+  .header {
+    flex-direction: row;
+  }
+}
+.header__content {
+  flex: 1;
+}
+.header__content img {
+  width: 45rem;
+  height: 15rem;
+}
+.header__content p {
+  line-height: 1.5em;
+}
+.header__esquema {
+  flex: 2;
+}
+.header__esquema img {
+  width: 100%;
+}
+
+.revolucion {
+  background: url("../images/bienvenida.jpg") center center/cover;
+}
+.revolucion article {
+  flex: 1;
+  min-width: 30rem;
+  max-width: 30rem;
+}
+.revolucion article img {
+  height: 10rem;
+}
+.revolucion article p {
+  line-height: 1.5em;
+}
+
+.emprenya article {
+  flex: 1;
+  min-width: 25rem;
+  max-width: 25rem;
+}
+.emprenya article img {
+  height: 8rem;
+}
+.emprenya article p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.naceEmprenya__content {
+  margin-top: -0.9rem;
+}
+.naceEmprenya article {
+  flex: 1;
+  min-width: 40rem;
+}
+.naceEmprenya article img {
+  height: 8rem;
+}
+.naceEmprenya article p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.clubReconocimiento__content {
+  position: relative;
+}
+.clubReconocimiento__content::after {
+  content: "";
+  position: absolute;
+  height: 90%;
+  background: #3c66b9;
+  width: 100%;
+  z-index: -1;
+  top: 30%;
+}
+.clubReconocimiento__content article {
+  box-shadow: 0 0 1rem #272626;
+  flex: 1;
+  min-width: 35rem;
+  max-width: 35rem;
+}
+.clubReconocimiento__content article img {
+  height: 13rem;
 }
 
 /*# sourceMappingURL=style.css.map */

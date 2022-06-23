@@ -1,0 +1,186 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.container {
+  @include pX(2rem);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+//! Paddings
+.pT-5 {
+  padding-top: 5rem;
+}
+
+.pB-3 {
+  padding-bottom: 3rem;
+}
+
+.pY-1 {
+  @include pY(1rem);
+}
+
+.pY-2 {
+  @include pY(2rem);
+}
+
+.pY-5 {
+  @include pY(5rem);
+}
+
+.pX-2 {
+  @include pX(2rem);
+}
+
+.pX-3 {
+  @include pX(3rem);
+}
+
+.pX-5 {
+  @include pX(5rem);
+}
+
+.pX-8 {
+  @include pX(8rem);
+}
+
+// ! Margin
+.mL-auto {
+  margin-left: auto;
+}
+
+.mT-1 {
+  margin-top: 1rem;
+}
+
+.mT-3 {
+  margin-top: 3rem;
+}
+
+.mT-5 {
+  margin-top: 5rem;
+}
+
+.mR-1 {
+  margin-right: 1rem;
+}
+
+.mR-2 {
+  margin-right: 2rem;
+}
+
+// ! Display
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+// ! Align
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+// !gap
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+// ! Fonts
+.font-jost {
+  font-family: 'Jost', sans-serif;
+}
+
+// ! Font-size
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+// ! Font weight
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+// ! Color
+.c-white {
+  color: $c-white;
+}
+
+.c-blue {
+  color: $c-blue;
+}
+
+.c-blue-light {
+  color: $c-blue-light;
+}
+
+.c-blue-light2 {
+  color: $c-blue-light2;
+}
+
+.c-blue-light3 {
+  color: $c-blue-light3;
+}
+// ! Bg
+.bg-blue {
+  background: $c-blue;
+}
+
+.bg-gray {
+  background: $c-gray;
+}
+
+.bg-white {
+  background: $c-white;
+}
+
+// ! Decoration
+.text-decoration-none {
+  text-decoration: none;
+}
+
+// ! text transform
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
