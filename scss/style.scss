@@ -3,4 +3,7 @@
 
 @use 'layout/navigation';
 
-@use 'pages/homepage.scss';
+@use "components/accordion";
+
+@use 'pages/afiliados';
+@use 'pages/homepage';

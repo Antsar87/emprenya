@@ -24,6 +24,10 @@
   @include pY(2rem);
 }
 
+.pY-3 {
+  @include pY(3rem);
+}
+
 .pY-5 {
   @include pY(5rem);
 }
@@ -40,6 +44,10 @@
   @include pX(5rem);
 }
 
+.pX-6 {
+  @include pX(6rem);
+}
+
 .pX-8 {
   @include pX(8rem);
 }
@@ -51,6 +59,10 @@
 
 .mT-1 {
   margin-top: 1rem;
+}
+
+.mT-2 {
+  margin-top: 2rem;
 }
 
 .mT-3 {
@@ -116,6 +128,10 @@
   gap: 5rem;
 }
 
+.gap-10 {
+  gap: 10rem;
+}
+
 // ! Fonts
 .font-jost {
   font-family: 'Jost', sans-serif;
@@ -162,6 +178,18 @@
 .c-blue-light3 {
   color: $c-blue-light3;
 }
+
+.c-green {
+  color: $c-green;
+}
+
+.c-yellow {
+  color: $c-yellow;
+}
+
+.c-red {
+  color: $c-red;
+}
 // ! Bg
 .bg-blue {
   background: $c-blue;
@@ -183,4 +211,9 @@
 // ! text transform
 .text-transform-uppercase {
   text-transform: uppercase;
+}
+
+// ! border
+.border-dark {
+  box-shadow: 0 0 1rem $c-black;
 }

@@ -1,0 +1,79 @@
+@use '../abstracts/mixins' as *;
+
+.headerRecomienda {
+  background: url('../../images/afiliados.jpg') center center / cover;
+  padding: 10rem 5rem;
+
+  @include for-size('tablet-landscape-up') {
+    padding: 10rem 30rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.programa {
+  article {
+    flex: 1;
+    min-width: 30rem;
+
+    img {
+      height: 3.5rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.afiliarse {
+  &.container {
+    max-width: 1200px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+
+    article {
+      margin-top: 2rem;
+    }
+
+    @include for-size(700px) {
+      flex-direction: row;
+    }
+  }
+
+  article {
+    img {
+      height: 8rem;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+  }
+
+  &__box--1 {
+    article {
+      @include minmax(25rem);
+    }
+  }
+
+  &__box--2 {
+    @include for-size(900px) {
+      margin-top: -5rem;
+    }
+    article {
+      @include minmax(45rem);
+    }
+  }
+}
+
+.qasection {
+  &.container {
+    max-width: 1200px;
+  }
+}

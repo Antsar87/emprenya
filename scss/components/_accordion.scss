@@ -1,0 +1,42 @@
+@use '../abstracts/colors' as *;
+
+.accordion {
+  cursor: pointer;
+  padding: 1.8rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  transition: 0.4s;
+  background-color: $c-white;
+}
+
+.active {
+  background-color: $c-blue-light2;
+  font-weight: 600;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 0.5rem;
+}
+
+.active:after {
+  content: '\2212';
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+  &__content {
+    p {
+      line-height: 1.5em;
+      font-size: 2.7rem;
+    }
+  }
+}

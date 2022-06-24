@@ -1,12 +1,6 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/colors' as *;
 
-@mixin minmax($width) {
-  flex: 1;
-  min-width: $width;
-  max-width: $width;
-}
-
 .header {
   flex-direction: column;
 
@@ -99,7 +93,6 @@
     }
 
     article {
-      box-shadow: 0 0 1rem $c-black;
       @include minmax(35rem);
       img {
         height: 13rem;

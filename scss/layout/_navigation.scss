@@ -17,10 +17,8 @@
     }
   }
 
-  &__center {
-    flex-wrap: wrap;
+  .border-bottom {
     position: relative;
-    padding-bottom: 4rem;
 
     &::after {
       content: '';
@@ -32,6 +30,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  &__center {
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
 
     div {
       text-align: center;

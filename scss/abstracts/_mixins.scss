@@ -44,3 +44,9 @@
   margin-top: $value;
   margin-bottom: $value;
 }
+
+@mixin minmax($width) {
+  flex: 1;
+  min-width: $width;
+  max-width: $width;
+}

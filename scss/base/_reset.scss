@@ -9,8 +9,16 @@
 }
 
 html {
-  font-size: 50%;
+  font-size: 31.25%;
   scroll-behavior: smooth;
+
+  @include for-size("tablet-portrait-up"){
+    font-size: 37.5%;
+  }
+
+  @include for-size("tablet-landscape-up"){
+    font-size: 50%;
+  }
 }
 
 body {
