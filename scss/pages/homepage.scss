@@ -6,10 +6,17 @@
 
   @include for-size(1000px) {
     flex-direction: row;
+    padding: 0 8rem;
   }
 
   &__content {
     flex: 1;
+    text-align: center;
+
+    @include for-size('tablet-landscape-up') {
+      text-align: start;
+    }
+
     img {
       width: 45rem;
       height: 15rem;
@@ -23,9 +30,8 @@
   &__esquema {
     flex: 2;
     img {
-      width:100%;
+      width: 100%;
       max-width: 90rem;
-      
     }
   }
 }
@@ -46,21 +52,37 @@
 }
 
 .emprenya {
+  &__title {
+    text-align: center;
+
+    @include for-size('tablet-portrait-up') {
+      text-align: start;
+    }
+  }
+
   article {
     @include minmax(25rem);
 
     img {
-      height: 8rem;
+      height: 13rem;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       line-height: 1.5em;
     }
   }
 }
 
 .naceEmprenya {
+  &__title {
+    text-align: center;
+
+    @include for-size('tablet-portrait-up') {
+      text-align: end;
+    }
+  }
+
   &__content {
     margin-top: -0.9rem;
   }
@@ -69,29 +91,29 @@
     min-width: 40rem;
 
     img {
-      height: 8rem;
+      height: 13rem;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       line-height: 1.5em;
     }
   }
 }
 
 .clubReconocimiento {
-  &__content {
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      height: 90%;
-      background: $c-blue;
-      width: 100%;
-      z-index: -1;
-      top: 30%;
-    }
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 80%;
+    background: $c-blue;
+    width: 100%;
+    z-index: -1;
+    top: 40%;
+  }
 
+  &__content {
     article {
       @include minmax(35rem);
       img {

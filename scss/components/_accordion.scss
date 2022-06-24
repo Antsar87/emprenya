@@ -2,6 +2,7 @@
 
 .accordion {
   cursor: pointer;
+  position: relative;
   padding: 1.8rem;
   width: 100%;
   border: none;
@@ -18,9 +19,12 @@
 
 .accordion:after {
   content: '\002B';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
   color: black;
   font-weight: bold;
-  float: right;
   margin-left: 0.5rem;
 }
 

@@ -8,13 +8,8 @@
 }
 
 html {
-  font-size: 31.25%;
+  font-size: 37.5%;
   scroll-behavior: smooth;
-}
-@media (min-width: 600px) {
-  html {
-    font-size: 37.5%;
-  }
 }
 @media (min-width: 900px) {
   html {
@@ -31,7 +26,7 @@ body {
 .container {
   padding-right: 2rem;
   padding-left: 2rem;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -241,7 +236,7 @@ body {
 }
 
 .border-dark {
-  box-shadow: 0 0 1rem #b3b3b3;
+  box-shadow: 0 0 0.7rem #b3b3b3;
 }
 
 .nav__top {
@@ -270,31 +265,24 @@ body {
   transform: translate(-50%, -50%);
 }
 .nav__center {
-  flex-wrap: wrap;
-  padding-bottom: 4rem;
+  flex-direction: column;
+  padding-bottom: 3rem;
 }
-.nav__center div {
-  text-align: center;
-  flex: 1;
-}
-.nav__center div img {
-  object-fit: cover;
-  height: 2.5rem;
-}
-.nav__center div .logo--1 {
-  height: 6rem;
-}
-@media (min-width: 900px) {
-  .nav__center div {
-    flex: initial;
+@media (min-width: 600px) {
+  .nav__center {
+    flex-direction: row;
   }
-  .nav__center .box--2 {
-    margin-left: auto;
-  }
+}
+.nav__center img {
+  height: 3rem;
+}
+.nav__center .box--1 img {
+  height: 9rem;
 }
 
 .accordion {
   cursor: pointer;
+  position: relative;
   padding: 1.8rem;
   width: 100%;
   border: none;
@@ -311,9 +299,12 @@ body {
 
 .accordion:after {
   content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
   color: black;
   font-weight: bold;
-  float: right;
   margin-left: 0.5rem;
 }
 
@@ -346,10 +337,10 @@ body {
 
 .programa article {
   flex: 1;
-  min-width: 30rem;
+  min-width: 25rem;
 }
 .programa article img {
-  height: 3.5rem;
+  height: 2.9rem;
 }
 .programa article p {
   font-size: 1.7rem;
@@ -371,7 +362,7 @@ body {
   }
 }
 .afiliarse article img {
-  height: 8rem;
+  height: 13rem;
 }
 .afiliarse article p {
   line-height: 1.5em;
@@ -381,7 +372,7 @@ body {
   min-width: 25rem;
   max-width: 25rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   .afiliarse__box--2 {
     margin-top: -5rem;
   }
@@ -402,10 +393,17 @@ body {
 @media (min-width: 1000px) {
   .header {
     flex-direction: row;
+    padding: 0 8rem;
   }
 }
 .header__content {
   flex: 1;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .header__content {
+    text-align: start;
+  }
 }
 .header__content img {
   width: 45rem;
@@ -437,19 +435,35 @@ body {
   line-height: 1.5em;
 }
 
+.emprenya__title {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .emprenya__title {
+    text-align: start;
+  }
+}
 .emprenya article {
   flex: 1;
   min-width: 25rem;
   max-width: 25rem;
 }
 .emprenya article img {
-  height: 8rem;
+  height: 13rem;
 }
 .emprenya article p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5em;
 }
 
+.naceEmprenya__title {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .naceEmprenya__title {
+    text-align: end;
+  }
+}
 .naceEmprenya__content {
   margin-top: -0.9rem;
 }
@@ -458,24 +472,24 @@ body {
   min-width: 40rem;
 }
 .naceEmprenya article img {
-  height: 8rem;
+  height: 13rem;
 }
 .naceEmprenya article p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5em;
 }
 
-.clubReconocimiento__content {
+.clubReconocimiento {
   position: relative;
 }
-.clubReconocimiento__content::after {
+.clubReconocimiento::after {
   content: "";
   position: absolute;
-  height: 90%;
+  height: 80%;
   background: #3c66b9;
   width: 100%;
   z-index: -1;
-  top: 30%;
+  top: 40%;
 }
 .clubReconocimiento__content article {
   flex: 1;

@@ -33,30 +33,20 @@
   }
 
   &__center {
-    flex-wrap: wrap;
-    padding-bottom: 4rem;
+    flex-direction: column;
+    padding-bottom: 3rem;
 
-    div {
-      text-align: center;
-      flex: 1;
-
-      img {
-        object-fit: cover;
-        height: 2.5rem;
-      }
-
-      .logo--1 {
-        height: 6rem;
-      }
+    @include for-size('tablet-portrait-up') {
+      flex-direction: row;
     }
 
-    @include for-size('tablet-landscape-up') {
-      div {
-        flex: initial;
-      }
+    img {
+      height: 3rem;
+    }
 
-      .box--2 {
-        margin-left: auto;
+    .box--1 {
+      img {
+        height: 9rem;
       }
     }
   }

@@ -4,10 +4,17 @@
 @media (min-width: 1000px) {
   .header {
     flex-direction: row;
+    padding: 0 8rem;
   }
 }
 .header__content {
   flex: 1;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .header__content {
+    text-align: start;
+  }
 }
 .header__content img {
   width: 45rem;
@@ -39,19 +46,35 @@
   line-height: 1.5em;
 }
 
+.emprenya__title {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .emprenya__title {
+    text-align: start;
+  }
+}
 .emprenya article {
   flex: 1;
   min-width: 25rem;
   max-width: 25rem;
 }
 .emprenya article img {
-  height: 8rem;
+  height: 13rem;
 }
 .emprenya article p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5em;
 }
 
+.naceEmprenya__title {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .naceEmprenya__title {
+    text-align: end;
+  }
+}
 .naceEmprenya__content {
   margin-top: -0.9rem;
 }
@@ -60,24 +83,24 @@
   min-width: 40rem;
 }
 .naceEmprenya article img {
-  height: 8rem;
+  height: 13rem;
 }
 .naceEmprenya article p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5em;
 }
 
-.clubReconocimiento__content {
+.clubReconocimiento {
   position: relative;
 }
-.clubReconocimiento__content::after {
+.clubReconocimiento::after {
   content: "";
   position: absolute;
-  height: 90%;
+  height: 80%;
   background: #3c66b9;
   width: 100%;
   z-index: -1;
-  top: 30%;
+  top: 40%;
 }
 .clubReconocimiento__content article {
   flex: 1;

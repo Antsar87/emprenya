@@ -16,10 +16,10 @@
 .programa {
   article {
     flex: 1;
-    min-width: 30rem;
+    min-width: 25rem;
 
     img {
-      height: 3.5rem;
+      height: 2.9rem;
     }
 
     p {
@@ -48,7 +48,7 @@
 
   article {
     img {
-      height: 8rem;
+      height: 13rem;
     }
 
     p {
@@ -63,7 +63,7 @@
   }
 
   &__box--2 {
-    @include for-size(900px) {
+    @include for-size(950px) {
       margin-top: -5rem;
     }
     article {

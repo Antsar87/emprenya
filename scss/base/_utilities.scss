@@ -3,7 +3,7 @@
 
 .container {
   @include pX(2rem);
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -215,5 +215,5 @@
 
 // ! border
 .border-dark {
-  box-shadow: 0 0 1rem $c-black;
+  box-shadow: 0 0 .7rem $c-black;
 }

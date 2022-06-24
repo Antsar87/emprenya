@@ -25,42 +25,51 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav mT-1 container">
-      <div
-        class="nav__top bg-blue pY-2 pX-3 d-flex justify-content-between align-items-center"
-      >
-        <a href="index.html" class="c-white">CASTELLANO</a>
+    <nav class="nav">
+      <div class="bg-blue">
+        <div
+          class="nav__top container pY-2 pX-3 d-flex justify-content-between align-items-center"
+        >
+          <a href="index.html" class="c-white">CASTELLANO</a>
 
-        <a href="afiliados.html" class="mL-auto mR-2 c-white text-decoration-none">
-          AFILIADOS
-        </a>
+          <a
+            href="afiliados.html"
+            class="mL-auto mR-2 c-white text-decoration-none"
+          >
+            AFILIADOS
+          </a>
 
-        <div class="registro">
-          <a href="#" class="c-white text-decoration-none"> Registro </a>
+          <div class="registro">
+            <a href="#" class="c-white text-decoration-none"> Registro </a>
+          </div>
+          <a href="#" class="c-white text-decoration-none"> LOGIN </a>
         </div>
-        <a href="#" class="c-white text-decoration-none"> LOGIN </a>
       </div>
 
       <div
-        class="nav__center border-bottom d-flex align-items-center pX-2 mT-1 gap-2"
+        class="nav__center container border-bottom d-flex justify-content-between align-items-center pX-2 mT-1 gap-2"
       >
-        <div><img src="images/emprenya.png" alt="" class="logo--1" /></div>
-        <div class="box--2">
-          <img src="images/impulsaya.png" alt="" class="logo--2" />
+        <div class="box--1">
+          <img src="images/emprenya.png" alt="" class="logo--1" />
         </div>
-        <div>
-          <img src="images/lanzaya.png" alt="" class="logo--3" />
-        </div>
-        <div>
-          <img src="images/aprenya.png" alt="" class="logo--4" />
-        </div>
-        <div>
-          <img src="images/blockchain.png" alt="" class="logo--5" />
+        <div class="box--2 d-flex gap-2">
+          <div>
+            <img src="images/impulsaya.png" alt="" class="logo--2" />
+          </div>
+          <div>
+            <img src="images/lanzaya.png" alt="" class="logo--3" />
+          </div>
+          <div>
+            <img src="images/aprenya.png" alt="" class="logo--4" />
+          </div>
+          <div>
+            <img src="images/blockchain.png" alt="" class="logo--5" />
+          </div>
         </div>
       </div>
     </nav>
 
-    <header class="header d-flex align-items-center container gap-5 pX-8 mT-5">
+    <header class="header d-flex align-items-center container gap-5 mT-5">
       <div class="header__content">
         <img src="images/que_es_emprenya.png" alt="" />
 
@@ -69,13 +78,13 @@
           servicios
         </p>
       </div>
-      <div class="header__esquema">
+      <div class="header__esquema text-end">
         <img src="images/esquema.png" alt="" />
       </div>
     </header>
 
     <section class="revolucion mT-5 pY-5">
-      <div class="text-center c-white fs-2">
+      <div class="text-center c-white fs-3">
         <h2>LA REVOLUCION DEL EMPRENDIMIENTO</h2>
       </div>
       <div class="container d-flex justify-content-center flex-wrap gap-5 mT-5">
@@ -114,31 +123,31 @@
     </section>
 
     <section class="emprenya container mT-5">
-      <div class="c-blue fs-2">
+      <div class="emprenya__title c-blue fs-2">
         <h2>
           ¿Comó emprenYA puede <br />
           ayudarte si eres emprendedor?
         </h2>
       </div>
 
-      <div class="d-flex flex-wrap justify-content-center gap-3">
+      <div class="d-flex flex-wrap justify-content-center gap-3 mT-5">
         <article class="text-center mT-3">
           <img src="images/help.png" alt="" />
-          <p class="text-transform-uppercase mT-1 font-jost">
+          <p class="text-transform-uppercase mT-3 font-jost">
             ayudánte a que escales tu negocio
           </p>
         </article>
 
         <article class="text-center mT-3">
           <img src="images/monetiza.png" alt="" />
-          <p class="text-transform-uppercase mT-1 font-jost">
+          <p class="text-transform-uppercase mT-3 font-jost">
             monetizando tu red
           </p>
         </article>
 
         <article class="text-center mT-3">
           <img src="images/prospectos.png" alt="" />
-          <p class="text-transform-uppercase mT-1 font-jost">
+          <p class="text-transform-uppercase mT-3 font-jost">
             a conseguir prospectos de forma automática a traves de los embudos
             de venta.
           </p>
@@ -146,48 +155,50 @@
 
         <article class="text-center mT-3">
           <img src="images/fideliza.png" alt="" />
-          <p class="text-transform-uppercase mT-1 font-jost">
+          <p class="text-transform-uppercase mT-3 font-jost">
             fidelizando a tu equipo
           </p>
         </article>
       </div>
     </section>
 
-    <section class="naceEmprenya container mT-5">
-      <div class="text-end c-blue fs-2">
+    <section class="naceEmprenya mT-5">
+      <div class="naceEmprenya__title container text-end c-blue fs-2">
         <h2>¿Por qué nace emprenYA?</h2>
       </div>
 
-      <div
-        class="naceEmprenya__content pX-2 pT-5 pB-3 bg-gray d-flex flex-wrap justify-content-center gap-3"
-      >
-        <article class="text-center mT-3 c-blue-light2">
-          <img src="images/cansancio.png" alt="" />
-          <p class="text-transform-uppercase mT-1 font-jost">
-            estamos cansados de ver a emprendedores frustados que no tienen los
-            resultados que desean
-          </p>
-        </article>
+      <div class="bg-gray">
+        <div
+          class="naceEmprenya__content container pX-2 pT-5 pB-3 d-flex flex-wrap justify-content-center gap-3"
+        >
+          <article class="text-center mT-3 c-blue-light2">
+            <img src="images/cansancio.png" alt="" />
+            <p class="text-transform-uppercase mT-1 font-jost">
+              estamos cansados de ver a emprendedores frustados que no tienen
+              los resultados que desean
+            </p>
+          </article>
 
-        <article class="text-center mT-3 c-blue-light2">
-          <img src="images/ayuda.png" alt="" />
-          <p class="text-transform-uppercase mT-1 font-jost">
-            ayudar y guiar a los emprendedores a cumplir sus sueños.
-          </p>
-        </article>
+          <article class="text-center mT-3 c-blue-light2">
+            <img src="images/ayuda.png" alt="" />
+            <p class="text-transform-uppercase mT-1 font-jost">
+              ayudar y guiar a los emprendedores a cumplir sus sueños.
+            </p>
+          </article>
 
-        <article class="text-center mT-3 c-blue-light2">
-          <img src="images/Recurso 20.png" alt="" />
-          <p class="text-transform-uppercase mT-1 font-jost">
-            agrupar todo lo que necesita un emprendedor para tener éxito en su
-            negocio.
-          </p>
-        </article>
+          <article class="text-center mT-3 c-blue-light2">
+            <img src="images/Recurso 20.png" alt="" />
+            <p class="text-transform-uppercase mT-1 font-jost">
+              agrupar todo lo que necesita un emprendedor para tener éxito en su
+              negocio.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="clubReconocimiento container mT-5">
-      <div class="text-center c-blue text-transform-uppercase">
+    <section class="clubReconocimiento mT-5">
+      <div class="text-center container c-blue text-transform-uppercase">
         <h2 class="fs-3">club de reconocimiento</h2>
         <p class="font-jost fs-2 mT-1">
           aumenta tu facturación o la de tu cliente con cualquier servicio de
@@ -196,10 +207,10 @@
       </div>
 
       <div
-        class="clubReconocimiento__content d-flex flex-wrap justify-content-center gap-3"
+        class="clubReconocimiento__content container d-flex flex-wrap justify-content-center gap-3"
       >
         <article
-          class="text-center mT-3 c-blue-light2 text-transform-uppercase bg-white pX-2 pY-5 border-dark"
+          class="text-center mT-5 c-blue-light2 text-transform-uppercase bg-white pX-2 pY-5 border-dark"
         >
           <img src="images/avionpapel.png" alt="" />
           <h2 class="fw-bold fs-3 mT-3 c-blue-light">club 100k</h2>
@@ -207,7 +218,7 @@
         </article>
 
         <article
-          class="text-center mT-3 c-blue-light2 text-transform-uppercase bg-white pX-2 pY-5 border-dark"
+          class="text-center mT-5 c-blue-light2 text-transform-uppercase bg-white pX-2 pY-5 border-dark"
         >
           <img src="images/avion.png" alt="" />
           <h2 class="fw-bold fs-3 mT-3 c-blue-light2">club 300k</h2>
@@ -215,7 +226,7 @@
         </article>
 
         <article
-          class="text-center mT-3 c-blue-light2 text-transform-uppercase bg-white pX-2 pY-5 border-dark"
+          class="text-center mT-5 c-blue-light2 text-transform-uppercase bg-white pX-2 pY-5 border-dark"
         >
           <img src="images/cohete.png" alt="" />
           <h2 class="fw-bold fs-3 mT-3 c-blue-light3">club 1M</h2>
