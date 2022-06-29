@@ -8,13 +8,8 @@
 }
 
 html {
-  font-size: 37.5%;
+  font-size: 50%;
   scroll-behavior: smooth;
-}
-@media (min-width: 900px) {
-  html {
-    font-size: 50%;
-  }
 }
 
 body {
@@ -240,7 +235,7 @@ body {
 }
 
 .nav__top {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .nav__top > a {
@@ -274,10 +269,20 @@ body {
   }
 }
 .nav__center img {
-  height: 3rem;
+  height: 2.3rem;
+}
+@media (min-width: 900px) {
+  .nav__center img {
+    height: 3rem;
+  }
 }
 .nav__center .box--1 img {
-  height: 9rem;
+  height: 6rem;
+}
+@media (min-width: 900px) {
+  .nav__center .box--1 img {
+    height: 9rem;
+  }
 }
 
 .accordion {
@@ -335,15 +340,30 @@ body {
   width: 100%;
 }
 
+.programa .d-flex {
+  flex-direction: column;
+}
+@media (min-width: 1100px) {
+  .programa .d-flex {
+    flex-direction: row;
+  }
+}
 .programa article {
   flex: 1;
-  min-width: 25rem;
 }
 .programa article img {
-  height: 2.9rem;
+  height: 4rem;
+}
+.programa article h2 {
+  font-size: 2.6rem;
 }
 .programa article p {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
+}
+@media (min-width: 900px) {
+  .programa article p {
+    font-size: 1.7rem;
+  }
 }
 
 .afiliarse.container {
@@ -356,7 +376,7 @@ body {
 .afiliarse .d-flex article {
   margin-top: 2rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .afiliarse .d-flex {
     flex-direction: row;
   }
@@ -366,6 +386,7 @@ body {
 }
 .afiliarse article p {
   line-height: 1.5em;
+  font-size: 2.6rem;
 }
 .afiliarse__box--1 article {
   flex: 1;
@@ -423,10 +444,17 @@ body {
 .revolucion {
   background: url("../images/bienvenida.jpg") center center/cover;
 }
+.revolucion .d-flex {
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .revolucion .d-flex {
+    flex-direction: row;
+  }
+}
 .revolucion article {
-  flex: 1;
-  min-width: 30rem;
-  max-width: 30rem;
+  max-width: 70rem;
 }
 .revolucion article img {
   height: 10rem;
@@ -438,21 +466,28 @@ body {
 .emprenya__title {
   text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .emprenya__title {
     text-align: start;
   }
 }
+.emprenya .d-flex {
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .emprenya .d-flex {
+    flex-direction: row;
+  }
+}
 .emprenya article {
   flex: 1;
-  min-width: 25rem;
-  max-width: 25rem;
 }
 .emprenya article img {
   height: 13rem;
 }
 .emprenya article p {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   line-height: 1.5em;
 }
 
@@ -464,40 +499,67 @@ body {
     text-align: end;
   }
 }
+.naceEmprenya .d-flex {
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .naceEmprenya .d-flex {
+    flex-direction: row;
+  }
+}
 .naceEmprenya__content {
   margin-top: -0.9rem;
 }
 .naceEmprenya article {
   flex: 1;
-  min-width: 40rem;
 }
 .naceEmprenya article img {
   height: 13rem;
 }
 .naceEmprenya article p {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   line-height: 1.5em;
 }
 
 .clubReconocimiento {
   position: relative;
 }
+.clubReconocimiento .d-flex {
+  flex-direction: column;
+}
+@media (min-width: 760px) {
+  .clubReconocimiento .d-flex {
+    flex-direction: row;
+  }
+}
 .clubReconocimiento::after {
   content: "";
   position: absolute;
-  height: 80%;
-  background: #3c66b9;
-  width: 100%;
-  z-index: -1;
-  top: 40%;
+}
+@media (min-width: 760px) {
+  .clubReconocimiento::after {
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    top: 40%;
+    background: #3c66b9;
+  }
+}
+.clubReconocimiento__content {
+  padding-bottom: 5rem;
 }
 .clubReconocimiento__content article {
   flex: 1;
-  min-width: 35rem;
-  max-width: 35rem;
 }
 .clubReconocimiento__content article img {
   height: 13rem;
+}
+.clubReconocimiento__content article h2 {
+  font-size: 3rem;
+}
+.clubReconocimiento__content article p {
+  font-size: 2.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

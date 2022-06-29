@@ -3,7 +3,7 @@
 
 .nav {
   &__top {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 
     & > a {
@@ -41,12 +41,20 @@
     }
 
     img {
-      height: 3rem;
+      height: 2.3rem;
+
+      @include for-size('tablet-landscape-up') {
+        height: 3rem;
+      }
     }
 
     .box--1 {
       img {
-        height: 9rem;
+        height: 6rem;
+
+        @include for-size('tablet-landscape-up') {
+          height: 9rem;
+        }
       }
     }
   }

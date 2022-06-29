@@ -9,12 +9,8 @@
 }
 
 html {
-  font-size: 37.5%;
+  font-size: 50%;
   scroll-behavior: smooth;
-
-  @include for-size('tablet-landscape-up') {
-    font-size: 50%;
-  }
 }
 
 body {

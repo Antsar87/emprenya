@@ -14,16 +14,31 @@
 }
 
 .programa {
+  .d-flex {
+    flex-direction: column;
+
+    @include for-size(1100px) {
+      flex-direction: row;
+    }
+  }
+
   article {
     flex: 1;
-    min-width: 25rem;
 
     img {
-      height: 2.9rem;
+      height: 4rem;
+    }
+
+    h2 {
+      font-size: 2.6rem;
     }
 
     p {
-      font-size: 1.7rem;
+      font-size: 2.2rem;
+
+      @include for-size('tablet-landscape-up') {
+        font-size: 1.7rem;
+      }
     }
   }
 }
@@ -41,7 +56,7 @@
       margin-top: 2rem;
     }
 
-    @include for-size(700px) {
+    @include for-size(800px) {
       flex-direction: row;
     }
   }
@@ -53,6 +68,7 @@
 
     p {
       line-height: 1.5em;
+      font-size: 2.6rem
     }
   }
 

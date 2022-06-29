@@ -39,9 +39,17 @@
 .revolucion {
   background: url('../images/bienvenida.jpg') center center / cover;
 
-  article {
-    @include minmax(30rem);
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
 
+    @include for-size('desktop-up') {
+      flex-direction: row;
+    }
+  }
+
+  article {
+    max-width: 70rem;
     img {
       height: 10rem;
     }
@@ -55,20 +63,28 @@
   &__title {
     text-align: center;
 
-    @include for-size('tablet-portrait-up') {
+    @include for-size(800px) {
       text-align: start;
     }
   }
 
-  article {
-    @include minmax(25rem);
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
 
+    @include for-size(800px) {
+      flex-direction: row;
+    }
+  }
+
+  article {
+    flex: 1;
     img {
       height: 13rem;
     }
 
     p {
-      font-size: 1.7rem;
+      font-size: 2.2rem;
       line-height: 1.5em;
     }
   }
@@ -83,19 +99,27 @@
     }
   }
 
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+
+    @include for-size('tablet-landscape-up') {
+      flex-direction: row;
+    }
+  }
+
   &__content {
     margin-top: -0.9rem;
   }
   article {
     flex: 1;
-    min-width: 40rem;
 
     img {
       height: 13rem;
     }
 
     p {
-      font-size: 1.7rem;
+      font-size: 2.2rem;
       line-height: 1.5em;
     }
   }
@@ -103,21 +127,42 @@
 
 .clubReconocimiento {
   position: relative;
+
+  .d-flex {
+    flex-direction: column;
+
+    @include for-size(760px) {
+      flex-direction: row;
+    }
+  }
+
   &::after {
     content: '';
     position: absolute;
-    height: 80%;
-    background: $c-blue;
-    width: 100%;
-    z-index: -1;
-    top: 40%;
+
+    @include for-size(760px) {
+      height: 80%;
+      width: 100%;
+      z-index: -1;
+      top: 40%;
+      background: $c-blue;
+    }
   }
 
   &__content {
+    padding-bottom: 5rem;
     article {
-      @include minmax(35rem);
+      flex: 1;
       img {
         height: 13rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2.2rem;
       }
     }
   }
