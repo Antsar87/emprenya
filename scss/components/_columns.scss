@@ -1,0 +1,21 @@
+.columns {
+  &__box {
+    flex: 1;
+
+    p {
+      line-height: 1.5em;
+    }
+
+    &--1 {
+      flex: 2;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    &--webs {
+        height: 30rem;
+    }
+  }
+}

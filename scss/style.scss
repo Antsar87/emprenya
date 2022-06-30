@@ -4,6 +4,9 @@
 @use 'layout/navigation';
 
 @use "components/accordion";
+@use "components/title";
+@use "components/columns";
+@use "components/flexContainer";
 
 @use 'pages/afiliados';
 @use 'pages/homepage';

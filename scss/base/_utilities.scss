@@ -90,6 +90,10 @@
   flex-wrap: wrap;
 }
 
+.flex-direction-reverse-row {
+  flex-direction: row-reverse;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -150,7 +154,18 @@
   font-size: 3rem;
 }
 
+.fs-4 {
+  font-size: 4rem;
+}
+
+.fs-5 {
+  font-size: 5rem;
+}
 // ! Font weight
+.fw-300 {
+  font-weight: 300;
+}
+
 .fw-600 {
   font-weight: 600;
 }
@@ -179,6 +194,10 @@
   color: $c-blue-light3;
 }
 
+.c-blue-dark {
+  color: $c-blue-dark;
+}
+
 .c-green {
   color: $c-green;
 }
@@ -203,6 +222,9 @@
   background: $c-white;
 }
 
+.bg-green {
+  background: $c-green;
+}
 // ! Decoration
 .text-decoration-none {
   text-decoration: none;
@@ -215,5 +237,15 @@
 
 // ! border
 .border-dark {
-  box-shadow: 0 0 .7rem $c-black;
+  box-shadow: 0 0 0.7rem $c-black;
+}
+
+// ! width
+.w-100 {
+  width: 100%;
+}
+
+// ! ul
+.list-style-none {
+  list-style: none;
 }
