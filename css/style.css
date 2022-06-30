@@ -419,11 +419,16 @@ body {
 }
 @media (min-width: 900px) {
   .headerRecomienda {
-    padding: 10rem 30rem;
+    padding: 10rem 20rem;
   }
 }
 .headerRecomienda img {
-  width: 100%;
+  width: 40rem;
+}
+@media (min-width: 900px) {
+  .headerRecomienda img {
+    width: 100%;
+  }
 }
 
 .programa .d-flex {
