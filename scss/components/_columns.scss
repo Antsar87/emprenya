@@ -1,4 +1,20 @@
+@use '../abstracts/mixins' as *;
+
 .columns {
+  flex-direction: column;
+
+  &.flex-direction-reverse {
+    flex-direction: column-reverse;
+  }
+
+  @include for-size('tablet-portrait-up') {
+    flex-direction: row;
+
+    &.flex-direction-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
   &__box {
     flex: 1;
 
@@ -9,13 +25,17 @@
     &--1 {
       flex: 2;
     }
+
+    &--arquitectura1 {
+      flex: 1;
+    }
   }
 
   &__img {
     width: 100%;
 
     &--webs {
-        height: 30rem;
+      height: 30rem;
     }
   }
 }

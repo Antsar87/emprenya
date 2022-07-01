@@ -9,7 +9,6 @@
 
 html {
   font-size: 50%;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +30,10 @@ body {
 
 .pB-3 {
   padding-bottom: 3rem;
+}
+
+.pL-4 {
+  padding-left: 4rem;
 }
 
 .pY-1 {
@@ -80,6 +83,10 @@ body {
 
 .mL-auto {
   margin-left: auto;
+}
+
+.mT-auto {
+  margin-top: auto;
 }
 
 .mT-1 {
@@ -198,6 +205,10 @@ body {
   color: #fff;
 }
 
+.c-black {
+  color: #000;
+}
+
 .c-blue {
   color: #3c66b9;
 }
@@ -242,8 +253,28 @@ body {
   background: #fff;
 }
 
+.bg-white-light {
+  background: #f5fffa;
+}
+
 .bg-green {
   background: #5fd3bd;
+}
+
+.bg-green-light {
+  background-color: #c2e8dc;
+}
+
+.bg-green-light-2 {
+  background-color: #addfcd;
+}
+
+.bg-green-dark {
+  background-color: #81c8b0;
+}
+
+.bg-yellow {
+  background: #feb805;
 }
 
 .text-decoration-none {
@@ -317,6 +348,15 @@ body {
   }
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+.btn--radius {
+  border-radius: 1rem;
+}
+
 .accordion {
   cursor: pointer;
   position: relative;
@@ -362,8 +402,10 @@ body {
 .title {
   margin: 0 auto;
 }
-.title--container {
-  width: 70%;
+@media (min-width: 900px) {
+  .title--container {
+    width: 70%;
+  }
 }
 .title__main {
   font-size: 3rem;
@@ -373,6 +415,20 @@ body {
   font-weight: 300;
 }
 
+.columns {
+  flex-direction: column;
+}
+.columns.flex-direction-reverse {
+  flex-direction: column-reverse;
+}
+@media (min-width: 600px) {
+  .columns {
+    flex-direction: row;
+  }
+  .columns.flex-direction-reverse {
+    flex-direction: row-reverse;
+  }
+}
 .columns__box {
   flex: 1;
 }
@@ -381,6 +437,9 @@ body {
 }
 .columns__box--1 {
   flex: 2;
+}
+.columns__box--arquitectura1 {
+  flex: 1;
 }
 .columns__img {
   width: 100%;
@@ -401,6 +460,13 @@ body {
 }
 .flexContainer__box {
   flex: 1;
+}
+.flexContainer__box--bono {
+  display: flex;
+  flex-direction: column;
+}
+.flexContainer__box--bono div {
+  flex-grow: 1;
 }
 .flexContainer__title {
   font-size: 2.6rem;
@@ -634,8 +700,13 @@ body {
     width: 100%;
     z-index: -1;
     top: 40%;
-    background: #3c66b9;
+    background-color: #3c66b9;
   }
+}
+.clubReconocimiento--lanza::after {
+  background-color: #4dceb5;
+  height: 65%;
+  top: 20%;
 }
 .clubReconocimiento__content {
   padding-bottom: 5rem;
@@ -651,6 +722,12 @@ body {
 }
 .clubReconocimiento__content article p {
   font-size: 2.2rem;
+}
+.clubReconocimiento__content--lanza article {
+  flex: initial;
+  flex-basis: 43rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,16 @@
+@use '../abstracts/mixins' as *;
+
 .title {
   margin: 0 auto;
 
   &--container {
-    width: 70%;
+    @include for-size('tablet-landscape-up') {
+      width: 70%;
+    }
   }
 
   &__main {
     font-size: 3rem;
-
-    &--big {
-    }
   }
 
   h3 {

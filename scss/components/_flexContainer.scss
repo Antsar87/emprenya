@@ -11,6 +11,15 @@
 
   &__box {
     flex: 1;
+
+    &--bono {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        flex-grow: 1;
+      }
+    }
   }
 
   &__title {

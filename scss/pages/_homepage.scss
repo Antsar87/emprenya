@@ -145,7 +145,15 @@
       width: 100%;
       z-index: -1;
       top: 40%;
-      background: $c-blue;
+      background-color: $c-blue;
+    }
+  }
+
+  &--lanza {
+    &::after {
+      background-color: $c-green-2;
+      height: 65%;
+      top: 20%;
     }
   }
 
@@ -163,6 +171,15 @@
 
       p {
         font-size: 2.2rem;
+      }
+    }
+
+    &--lanza {
+      article {
+        flex: initial;
+        flex-basis: 43rem;
+        display: flex;
+        flex-direction: column;
       }
     }
   }

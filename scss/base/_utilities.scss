@@ -16,6 +16,10 @@
   padding-bottom: 3rem;
 }
 
+.pL-4 {
+  padding-left: 4rem;
+}
+
 .pY-1 {
   @include pY(1rem);
 }
@@ -55,6 +59,10 @@
 // ! Margin
 .mL-auto {
   margin-left: auto;
+}
+
+.mT-auto {
+  margin-top: auto;
 }
 
 .mT-1 {
@@ -178,6 +186,10 @@
   color: $c-white;
 }
 
+.c-black {
+  color: $c-black-dark;
+}
+
 .c-blue {
   color: $c-blue;
 }
@@ -222,8 +234,28 @@
   background: $c-white;
 }
 
+.bg-white-light {
+  background: $c-white-light;
+}
+
 .bg-green {
   background: $c-green;
+}
+
+.bg-green-light {
+  background-color: $c-green-light;
+}
+
+.bg-green-light-2 {
+  background-color: $c-green-light-2;
+}
+
+.bg-green-dark {
+  background-color: $c-green-dark;
+}
+
+.bg-yellow {
+  background: $c-yellow;
 }
 // ! Decoration
 .text-decoration-none {
