@@ -128,7 +128,7 @@
 .clubReconocimiento {
   position: relative;
 
-  .d-flex {
+  & > .d-flex {
     flex-direction: column;
 
     @include for-size(760px) {
@@ -163,6 +163,10 @@
       flex: 1;
       img {
         height: 13rem;
+
+        &.clubReconocimiento__img--comprobado-lanza {
+          height: 2.3rem;
+        }
       }
 
       h2 {
@@ -171,6 +175,12 @@
 
       p {
         font-size: 2.2rem;
+      }
+
+      h3 {
+        &.clubReconocimiento__sub {
+          font-size: 1.7rem;
+        }
       }
     }
 
