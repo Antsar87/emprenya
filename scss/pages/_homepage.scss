@@ -186,10 +186,11 @@
 
     &--lanza {
       article {
-        flex: initial;
-        flex-basis: 43rem;
         display: flex;
+        flex: initial;
+        flex-basis: 45rem;
         flex-direction: column;
+        min-height: 65rem;
       }
     }
   }
