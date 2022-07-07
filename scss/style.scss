@@ -2,13 +2,14 @@
 @use 'base/utilities';
 
 @use 'layout/navigation';
-@use 'layout/footer';
 
-@use "components/btn";
-@use "components/accordion";
-@use "components/title";
-@use "components/columns";
-@use "components/flexContainer";
+@use 'components/btn';
+@use 'components/accordion';
+@use 'components/title';
+@use 'components/columns';
+@use 'components/flexContainer';
 
 @use 'pages/afiliados';
 @use 'pages/homepage';
+
+@use 'layout/footer';

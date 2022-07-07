@@ -1,0 +1,21 @@
+.footer .d-flex {
+  flex-direction: column;
+  row-gap: 3rem;
+}
+@media (min-width: 600px) {
+  .footer .d-flex {
+    flex-direction: row;
+  }
+}
+.footer__logo {
+  height: 13rem;
+}
+.footer__menu {
+  gap: 2rem;
+}
+.footer__menu li a {
+  display: block;
+}
+.footer__menu li a img {
+  height: 2rem;
+}
