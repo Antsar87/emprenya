@@ -1,3 +1,5 @@
+@use "../abstracts/colors" as *;
+
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -11,5 +13,9 @@
     &--carrito-img {
         // width: 9rem;
         height: 10rem !important;
+    }
+
+    &--box-shadow {
+        box-shadow: 0 0 2rem $c-black;
     }
 }

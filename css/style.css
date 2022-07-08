@@ -297,6 +297,10 @@ body {
   background: #ee7e6b;
 }
 
+.bg-red-darken {
+  background: #db3b34;
+}
+
 .text-decoration-none {
   text-decoration: none;
 }
@@ -384,6 +388,9 @@ body {
 }
 .btn--carrito-img {
   height: 10rem !important;
+}
+.btn--box-shadow {
+  box-shadow: 0 0 2rem #b3b3b3;
 }
 
 .accordion {
@@ -487,6 +494,10 @@ body {
 .flexContainer__box {
   flex: 1;
 }
+.flexContainer__box--bg-red {
+  background: rgba(238, 126, 107, 0.2);
+  border-radius: 1rem;
+}
 .flexContainer__box--bono {
   display: flex;
   flex-direction: column;
@@ -515,6 +526,9 @@ body {
 }
 .flexContainer__img--bono {
   height: 10rem;
+}
+.flexContainer__img--conseguiremos {
+  height: 20rem;
 }
 
 .headerRecomienda {
