@@ -74,11 +74,15 @@
 }
 
 .mT-3 {
-  margin-top: 3rem;
+  margin-top: 3rem !important;
 }
 
 .mT-5 {
-  margin-top: 5rem;
+  margin-top: 5rem !important;
+}
+
+.mT-9 {
+  margin-top: 9rem;
 }
 
 .mR-1 {
@@ -162,6 +166,10 @@
   font-size: 2rem;
 }
 
+.fs-md {
+  font-size: 2.5rem;
+}
+
 .fs-3 {
   font-size: 3rem;
 }
@@ -172,6 +180,10 @@
 
 .fs-5 {
   font-size: 5rem;
+}
+
+.fs-7 {
+  font-size: 7rem;
 }
 // ! Font weight
 .fw-300 {
@@ -261,6 +273,10 @@
 .bg-yellow {
   background: $c-yellow;
 }
+
+.bg-red {
+  background: $c-red;
+}
 // ! Decoration
 .text-decoration-none {
   text-decoration: none;
@@ -284,4 +300,8 @@
 // ! ul
 .list-style-none {
   list-style: none;
+}
+
+.nowrap {
+  white-space: nowrap;
 }

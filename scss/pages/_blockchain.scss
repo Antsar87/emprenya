@@ -1,0 +1,73 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+
+.headerBlockchain {
+  background: url(../images/fondeo1.jpg) center center / cover;
+  height: calc(100vh - 100px);
+
+  &__logo {
+    width: 100%;
+    max-width: 50rem;
+  }
+}
+
+.contactanos {
+  position: relative;
+  padding-bottom: 10rem;
+  background-color: $c-red-dark;
+  z-index: 1000;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    padding-top: 25rem;
+
+    img {
+      padding-right: 25rem;
+    }
+
+    h2 {
+      font-size: 5rem;
+    }
+
+    h3 {
+      padding-left: 25rem;
+    }
+  }
+
+  &__logo {
+    height: 5rem;
+
+    @include for-size("phone-only"){
+      font-size: 7rem;
+    }
+  }
+
+  &__form {
+    max-width: 100rem;
+    margin: 0 auto 0 auto;
+    padding: 0 2rem;
+  }
+
+  &__input {
+    background-color: transparent;
+    color: $c-white;
+    border: none;
+    border-bottom: 2px solid $c-white;
+    padding: 1rem 1.5rem;
+
+    &::placeholder {
+      color: $c-white;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

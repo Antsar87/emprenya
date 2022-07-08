@@ -98,11 +98,15 @@ body {
 }
 
 .mT-3 {
-  margin-top: 3rem;
+  margin-top: 3rem !important;
 }
 
 .mT-5 {
-  margin-top: 5rem;
+  margin-top: 5rem !important;
+}
+
+.mT-9 {
+  margin-top: 9rem;
 }
 
 .mR-1 {
@@ -181,6 +185,10 @@ body {
   font-size: 2rem;
 }
 
+.fs-md {
+  font-size: 2.5rem;
+}
+
 .fs-3 {
   font-size: 3rem;
 }
@@ -191,6 +199,10 @@ body {
 
 .fs-5 {
   font-size: 5rem;
+}
+
+.fs-7 {
+  font-size: 7rem;
 }
 
 .fw-300 {
@@ -281,6 +293,10 @@ body {
   background: #feb805;
 }
 
+.bg-red {
+  background: #ee7e6b;
+}
+
 .text-decoration-none {
   text-decoration: none;
 }
@@ -301,6 +317,10 @@ body {
   list-style: none;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .nav__top {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -315,6 +335,7 @@ body {
 }
 .nav .border-bottom {
   position: relative;
+  padding-bottom: 3rem;
 }
 .nav .border-bottom::after {
   content: "";
@@ -327,8 +348,8 @@ body {
   transform: translate(-50%, -50%);
 }
 .nav__center {
+  padding-bottom: 2rem;
   flex-direction: column;
-  padding-bottom: 3rem;
 }
 @media (min-width: 600px) {
   .nav__center {
@@ -352,32 +373,11 @@ body {
   }
 }
 
-.footer .d-flex {
-  flex-direction: column;
-  row-gap: 3rem;
-}
-@media (min-width: 600px) {
-  .footer .d-flex {
-    flex-direction: row;
-  }
-}
-.footer__logo {
-  height: 13rem;
-}
-.footer__menu {
-  gap: 2rem;
-}
-.footer__menu li a {
-  display: block;
-}
-.footer__menu li a img {
-  height: 2rem;
-}
-
 .btn {
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  border: none;
 }
 .btn--radius {
   border-radius: 1rem;
@@ -467,9 +467,6 @@ body {
 .columns__box--1 {
   flex: 2;
 }
-.columns__box--arquitectura1 {
-  flex: 1;
-}
 .columns__img {
   width: 100%;
 }
@@ -497,12 +494,21 @@ body {
 .flexContainer__box--bono div {
   flex-grow: 1;
 }
+@media (min-width: 600px) {
+  .flexContainer__box--clientes {
+    max-width: 30rem;
+  }
+}
 .flexContainer__title {
   font-size: 2.6rem;
 }
 .flexContainer__subtitle {
   font-size: 2rem;
   font-weight: 300;
+}
+.flexContainer__content {
+  font-size: 1.7rem;
+  line-height: 1.5em;
 }
 .flexContainer__img {
   height: 15rem;
@@ -767,6 +773,88 @@ body {
   flex-basis: 45rem;
   flex-direction: column;
   min-height: 65rem;
+}
+
+.headerBlockchain {
+  background: url(../images/fondeo1.jpg) center center/cover;
+  height: calc(100vh - 100px);
+}
+.headerBlockchain__logo {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.contactanos {
+  position: relative;
+  padding-bottom: 10rem;
+  background-color: #EA5C44;
+  z-index: 1000;
+}
+.contactanos__bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.contactanos__title {
+  padding-top: 25rem;
+}
+.contactanos__title img {
+  padding-right: 25rem;
+}
+.contactanos__title h2 {
+  font-size: 5rem;
+}
+.contactanos__title h3 {
+  padding-left: 25rem;
+}
+.contactanos__logo {
+  height: 5rem;
+}
+@media (min-width: 400px) {
+  .contactanos__logo {
+    font-size: 7rem;
+  }
+}
+.contactanos__form {
+  max-width: 100rem;
+  margin: 0 auto 0 auto;
+  padding: 0 2rem;
+}
+.contactanos__input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 1rem 1.5rem;
+}
+.contactanos__input::placeholder {
+  color: #fff;
+}
+.contactanos__input:focus {
+  outline: none;
+}
+
+.footer .d-flex {
+  flex-direction: column;
+  row-gap: 3rem;
+}
+@media (min-width: 600px) {
+  .footer .d-flex {
+    flex-direction: row;
+  }
+}
+.footer__logo {
+  height: 13rem;
+}
+.footer__menu {
+  gap: 2rem;
+}
+.footer__menu li a {
+  display: block;
+}
+.footer__menu li a img {
+  height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
