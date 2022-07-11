@@ -1,11 +1,16 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
 
-
 .headerBlockchain {
   background: url(../images/fondeo1.jpg) center center / cover;
   height: calc(100vh - 100px);
+  min-height: 600px;
+  padding-top: 10rem;
   
+  @include for-size('700px') {
+    padding-top: 0;
+    align-items: center;
+  }
 
   &__logo {
     width: 100%;
@@ -45,7 +50,7 @@
   &__logo {
     height: 5rem;
 
-    @include for-size("phone-only"){
+    @include for-size('phone-only') {
       font-size: 7rem;
     }
   }

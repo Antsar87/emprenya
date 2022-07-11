@@ -792,6 +792,14 @@ body {
 .headerBlockchain {
   background: url(../images/fondeo1.jpg) center center/cover;
   height: calc(100vh - 100px);
+  min-height: 600px;
+  padding-top: 10rem;
+}
+@media (min-width: 700px) {
+  .headerBlockchain {
+    padding-top: 0;
+    align-items: center;
+  }
 }
 .headerBlockchain__logo {
   width: 100%;
