@@ -24,6 +24,13 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 900px) {
+  .row-landscape {
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+}
+
 .pT-5 {
   padding-top: 5rem;
 }
@@ -54,6 +61,11 @@ body {
 .pY-5 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.pY-8 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pX-2 {
@@ -133,6 +145,10 @@ body {
   flex-direction: row-reverse;
 }
 
+.flex-direction-column {
+  flex-direction: column;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -210,7 +226,7 @@ body {
 }
 
 .fw-600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .fw-bold {
@@ -257,6 +273,10 @@ body {
   color: #ee7e6b;
 }
 
+.c-red-2 {
+  color: #bd0000;
+}
+
 .bg-blue {
   background: #3c66b9;
 }
@@ -295,6 +315,10 @@ body {
 
 .bg-red {
   background: #ee7e6b;
+}
+
+.bg-red-2 {
+  background: #bd0000;
 }
 
 .bg-red-darken {
@@ -385,6 +409,9 @@ body {
 }
 .btn--radius {
   border-radius: 1rem;
+}
+.btn--radiusBig {
+  border-radius: 1.5rem;
 }
 .btn--carrito-img {
   height: 10rem !important;
@@ -510,6 +537,14 @@ body {
     max-width: 30rem;
   }
 }
+@media (min-width: 600px) {
+  .flexContainer__box--tokenizar {
+    max-width: 35rem;
+  }
+}
+.flexContainer__box--radius {
+  border-radius: 1rem;
+}
 .flexContainer__title {
   font-size: 2.6rem;
 }
@@ -523,6 +558,9 @@ body {
 }
 .flexContainer__img {
   height: 15rem;
+}
+.flexContainer__img--md {
+  height: 8rem;
 }
 .flexContainer__img--bono {
   height: 10rem;
@@ -855,6 +893,23 @@ body {
 }
 .contactanos__input:focus {
   outline: none;
+}
+
+.headerBlockchainv2 {
+  background: linear-gradient(90deg, #8a232c 0%, #c0332c 35%, #EA5C44 100%);
+}
+.headerBlockchainv2__logo {
+  height: 5rem;
+}
+.headerBlockchainv2__content {
+  border-radius: 5rem;
+}
+.headerBlockchainv2__subtitle {
+  font-size: 2.8rem;
+}
+
+.tokenizar {
+  background: url(../images/blockchainv2/fondo.jpg);
 }
 
 .footer .d-flex {

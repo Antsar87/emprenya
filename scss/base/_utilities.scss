@@ -7,6 +7,13 @@
   margin: 0 auto;
 }
 
+.row-landscape {
+  @include for-size('tablet-landscape-up') {
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+}
+
 //! Paddings
 .pT-5 {
   padding-top: 5rem;
@@ -34,6 +41,10 @@
 
 .pY-5 {
   @include pY(5rem);
+}
+
+.pY-8 {
+  @include pY(8rem);
 }
 
 .pX-2 {
@@ -108,6 +119,10 @@
 
 .flex-direction-reverse-row {
   flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }
 
 .justify-content-between {
@@ -191,7 +206,7 @@
 }
 
 .fw-600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .fw-bold {
@@ -237,6 +252,10 @@
 .c-red {
   color: $c-red;
 }
+
+.c-red-2 {
+  color: $c-red-2;
+}
 // ! Bg
 .bg-blue {
   background: $c-blue;
@@ -276,6 +295,10 @@
 
 .bg-red {
   background: $c-red;
+}
+
+.bg-red-2 {
+  background: $c-red-2;
 }
 
 .bg-red-darken {

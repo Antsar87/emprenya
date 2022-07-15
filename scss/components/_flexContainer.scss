@@ -32,6 +32,16 @@
         max-width: 30rem;
       }
     }
+
+    &--tokenizar {
+      @include for-size('tablet-portrait-up') {
+        max-width: 35rem;
+      }
+    }
+
+    &--radius {
+      border-radius: 1rem;
+    }
   }
 
   &__title {
@@ -50,6 +60,10 @@
 
   &__img {
     height: 15rem;
+
+    &--md {
+      height: 8rem;
+    }
 
     &--bono {
       height: 10rem;
