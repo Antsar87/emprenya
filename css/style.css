@@ -417,6 +417,14 @@ body {
   }
 }
 
+.gridSystem {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.gridSystem__img {
+  height: 10rem;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
