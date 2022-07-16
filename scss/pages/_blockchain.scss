@@ -32,6 +32,10 @@
 
   &__content {
     border-radius: 5rem;
+
+    @include for-size('tablet-landscape-up') {
+      @include pX(8rem);
+    }
   }
 
   &__subtitle {

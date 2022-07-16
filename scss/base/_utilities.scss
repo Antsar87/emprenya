@@ -167,6 +167,10 @@
   gap: 10rem;
 }
 
+.row-gap-5 {
+  row-gap: 5rem;
+}
+
 // ! Fonts
 .font-jost {
   font-family: 'Jost', sans-serif;
@@ -256,6 +260,14 @@
 .c-red-2 {
   color: $c-red-2;
 }
+
+.c-red-dark {
+  color: $c-red-dark;
+}
+
+.bg-red-opacity {
+  background: rgba($c-red, 0.1);
+}
 // ! Bg
 .bg-blue {
   background: $c-blue;
@@ -331,4 +343,9 @@
 
 .nowrap {
   white-space: nowrap;
+}
+
+// ! line-height
+.line-height-md {
+  line-height: 1.5em;
 }
