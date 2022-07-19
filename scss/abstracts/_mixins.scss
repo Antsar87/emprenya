@@ -7,6 +7,10 @@
     @media (min-width: 600px) {
       @content;
     }
+  } @else if $size == tablet-medium-up {
+    @media (min-width: 700px) {
+      @content;
+    }
   } @else if $size == tablet-landscape-up {
     @media (min-width: 900px) {
       @content;

@@ -24,6 +24,13 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 700px) {
+  .row-medium {
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+}
+
 @media (min-width: 900px) {
   .row-landscape {
     flex-direction: row !important;
@@ -161,14 +168,6 @@ body {
   align-items: center;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-end {
-  text-align: end;
-}
-
 .gap-1 {
   gap: 1rem;
 }
@@ -199,6 +198,10 @@ body {
 
 .fs-1 {
   font-size: 1rem;
+}
+
+.fs-small {
+  font-size: 1.7rem;
 }
 
 .fs-2 {
@@ -285,6 +288,26 @@ body {
   color: #EA5C44;
 }
 
+.bg-red {
+  background: #ee7e6b;
+}
+
+.bg-red-2 {
+  background: #bd0000;
+}
+
+.bg-red-darken {
+  background: #db3b34;
+}
+
+.bg-red-dark {
+  background: #EA5C44;
+}
+
+.bg-red-opacity-2, .flexContainer__box--bg-red {
+  background: rgba(238, 126, 107, 0.2);
+}
+
 .bg-red-opacity {
   background: rgba(238, 126, 107, 0.1);
 }
@@ -325,24 +348,24 @@ body {
   background: #feb805;
 }
 
-.bg-red {
-  background: #ee7e6b;
-}
-
-.bg-red-2 {
-  background: #bd0000;
-}
-
-.bg-red-darken {
-  background: #db3b34;
-}
-
 .text-decoration-none {
   text-decoration: none;
 }
 
 .text-transform-uppercase {
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .border-dark {
@@ -363,6 +386,10 @@ body {
 
 .line-height-md {
   line-height: 1.5em;
+}
+
+.object-fit-cover {
+  object-fit: cover;
 }
 
 .nav__top {
@@ -435,7 +462,7 @@ body {
   border-radius: 1rem;
 }
 .btn--radiusBig {
-  border-radius: 3rem;
+  border-radius: 1.5rem;
 }
 .btn--carrito-img {
   height: 10rem !important;
@@ -546,7 +573,6 @@ body {
   flex: 1;
 }
 .flexContainer__box--bg-red {
-  background: rgba(238, 126, 107, 0.2);
   border-radius: 1rem;
 }
 .flexContainer__box--bono {
@@ -579,6 +605,9 @@ body {
 }
 .flexContainer__box--radius {
   border-radius: 1rem;
+}
+.flexContainer__box--radius-big {
+  border-radius: 3rem;
 }
 .flexContainer__title {
   font-size: 2.6rem;
@@ -957,6 +986,22 @@ body {
 }
 .contactanos__input:focus {
   outline: none;
+}
+
+.comoCrearNfts__box {
+  width: 80%;
+  margin: 0 auto;
+}
+.comoCrearNfts__img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.cuentanosBlock {
+  background: url(../images/nfts/fondo_2.jpg) no-repeat left center/cover;
+}
+.cuentanosBlock__logo {
+  height: 7rem;
 }
 
 .footer .d-flex {

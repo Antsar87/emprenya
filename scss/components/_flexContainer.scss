@@ -14,7 +14,6 @@
     flex: 1;
 
     &--bg-red {
-      background: rgba($c-red, 0.2);
       border-radius: 1rem;
     }
 
@@ -54,6 +53,10 @@
 
     &--radius {
       border-radius: 1rem;
+    }
+
+    &--radius-big {
+      border-radius: 3rem;
     }
   }
 

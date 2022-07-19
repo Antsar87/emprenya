@@ -106,3 +106,23 @@
     }
   }
 }
+
+.comoCrearNfts {
+  &__box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__img {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.cuentanosBlock {
+  background: url(../images/nfts/fondo_2.jpg) no-repeat left center / cover;
+
+  &__logo {
+    height: 7rem;
+  }
+}
