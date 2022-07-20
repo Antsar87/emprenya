@@ -1,8 +1,45 @@
+@use '../abstracts/mixins' as *;
+
 .gridSystem {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 
+  &--2-columns {
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  }
+
   &__img {
     height: 10rem;
+
+    &--small {
+      height: 3rem;
+    }
+
+    &--big {
+      height: 20rem;
+    }
+  }
+
+  &--metaverso {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    @include for-size('phone-only') {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include for-size('tablet-landscape-up') {
+      grid-template-columns: 2fr 200px 200px;
+    }
+  }
+
+  &__tall {
+    @include for-size('phone-only') {
+      grid-column: span 2 / auto;
+    }
+    @include for-size('tablet-landscape-up') {
+      grid-column: initial;
+      grid-row: span 2 / auto;
+    }
   }
 }

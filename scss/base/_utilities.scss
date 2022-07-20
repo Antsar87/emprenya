@@ -57,6 +57,10 @@
   @include pY(8rem);
 }
 
+.pY-10 {
+  @include pY(10rem)
+}
+
 .pX-2 {
   @include pX(2rem);
 }
@@ -76,6 +80,7 @@
 .pX-8 {
   @include pX(8rem);
 }
+
 
 // ! Margin
 .mL-auto {
@@ -137,6 +142,10 @@
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
 }
 
 .justify-content-center {
