@@ -12,6 +12,12 @@
   justify-content: space-around;
 }
 
+.row-normal-phone {
+  @include for-size('phone-only') {
+    flex-direction: row !important;
+  }
+}
+
 .row-medium {
   @include for-size('tablet-medium-up') {
     @include row;
@@ -58,7 +64,7 @@
 }
 
 .pY-10 {
-  @include pY(10rem)
+  @include pY(10rem);
 }
 
 .pX-2 {
@@ -80,7 +86,6 @@
 .pX-8 {
   @include pX(8rem);
 }
-
 
 // ! Margin
 .mL-auto {
@@ -296,7 +301,8 @@
   background: $c-red-dark;
 }
 
-.bg-red-opacity-2, .flexContainer__box--bg-red {
+.bg-red-opacity-2,
+.flexContainer__box--bg-red {
   background: rgba($c-red, 0.2);
 }
 

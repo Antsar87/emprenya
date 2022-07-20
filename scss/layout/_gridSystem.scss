@@ -5,7 +5,10 @@
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 
   &--2-columns {
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-columns: 1fr;
+    @include for-size('tablet-portrait-up') {
+      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    }
   }
 
   &__img {
