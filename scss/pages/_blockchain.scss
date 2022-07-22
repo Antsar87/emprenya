@@ -19,12 +19,7 @@
 }
 
 .headerBlockchainv2 {
-  background: linear-gradient(
-    90deg,
-    $c-red-darken-2 0%,
-    $c-red-dark-2 35%,
-    $c-red-dark 100%
-  );
+  background: url(../../images/fondo1.jpg) no-repeat center center;
 
   &__logo {
     height: 5rem;
