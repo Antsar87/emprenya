@@ -42,6 +42,12 @@
   background: url(../images/blockchainv2/fondo.jpg);
 }
 
+.fases {
+  &--ya {
+    background: url(../../images/pasarelaPago/Mesa\ de\ trabajo\ 2.jpg) no-repeat center center / cover;
+  }
+}
+
 .contactanos {
   position: relative;
   padding-bottom: 10rem;

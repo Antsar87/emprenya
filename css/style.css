@@ -300,7 +300,7 @@ body {
 }
 
 .c-red-2 {
-  color: #a61a1d;
+  color: #db0000;
 }
 
 .c-red-dark {
@@ -316,7 +316,7 @@ body {
 }
 
 .bg-red-2 {
-  background: #a61a1d;
+  background: #db0000;
 }
 
 .bg-red-darken {
@@ -418,6 +418,10 @@ body {
 
 .object-fit-cover {
   object-fit: cover;
+}
+
+.border-radius-2 {
+  border-radius: 2rem;
 }
 
 .nav__top {
@@ -1002,6 +1006,10 @@ body {
 
 .tokenizar {
   background: url(../images/blockchainv2/fondo.jpg);
+}
+
+.fases--ya {
+  background: url(../../images/pasarelaPago/Mesa\ de\ trabajo\ 2.jpg) no-repeat center center/cover;
 }
 
 .contactanos {
