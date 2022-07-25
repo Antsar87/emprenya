@@ -20,11 +20,66 @@
     />
     <!-- Fonts -->
 
+    <script src="js/topNav.js" defer></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
+    <nav class="blockNav bg-red-dark">
+      <div class="container blockNav__box">
+        <img
+          src="images/blockchain_b.png"
+          loading="lazy"
+          alt=""
+          class="blockNav__logo"
+        />
+
+        <ul>
+          <li class="dropdown">
+            <a href="#">servicios</a>
+            <ul class="dropdown__content">
+              <li>
+                <a href="#">Tokenización</a>
+              </li>
+              <li>
+                <a href="#">Lanzamiento de tokens</a>
+              </li>
+              <li>
+                <a href="#">NFT</a>
+              </li>
+              <li>
+                <a href="#">Trazabilidad</a>
+              </li>
+              <li>
+                <a href="#">Desarrollo blockchain</a>
+              </li>
+              <li>
+                <a href="#">Metaverso</a>
+              </li>
+              <li>
+                <a href="#">Pasarelas de pago</a>
+              </li>
+              <li>
+                <a href="#">Smart Contract</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">quiénes somos</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+
+        <div>
+          <input type="text" class="blockNav__input"/>
+          <button class="blockNav__button">send</button>
+        </div>
+      </div>
+    </nav>
+
     <header class="headerBlockchainv2 pY-5">
       <div class="container">
         <div class="text-center">
@@ -1030,12 +1085,14 @@
           />
         </div>
 
-        <a
-          href="#"
-          class="btn btn--radiusBig bg-red-2 pX-5 pY-1 c-white fs-md fw-600 mT-5"
-        >
-          Enviar
-        </a>
+        <div class="text-end">
+          <a
+            href="#"
+            class="btn btn--radiusBig bg-red-2 pX-3 pY-1 c-white fs-md fw-600 mT-5"
+          >
+            cuéntanos de tu proyecto
+          </a>
+        </div>
       </form>
     </section>
 

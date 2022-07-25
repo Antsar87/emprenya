@@ -1,0 +1,81 @@
+@use '../abstracts/colors' as *;
+
+.blockNav {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+
+    & > ul {
+      list-style: none;
+      display: flex;
+      gap: 10rem;
+
+      & > li {
+        & > a {
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .dropdown {
+        position: relative;
+
+        &__content {
+          list-style: none;
+          display: none;
+          position: absolute;
+          background: rgba($c-red-dark, 0.9);
+          grid-template-columns: repeat(2, 1fr);
+          transform: translate(-30rem);
+          padding: 5rem 3rem 2rem 3rem;
+          gap: 2rem;
+          width: 700px;
+
+          a {
+            color: white;
+            text-decoration: none;
+            font-size: 2.5rem;
+          }
+        }
+
+        &:hover .dropdown__content {
+          display: grid;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    height: 6rem;
+  }
+
+  &__input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid $c-white;
+    width: 17rem;
+    padding: 1rem 1rem 1rem 1rem;
+    color: $c-white;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    color: $c-white;
+    margin-left: -1rem;
+    border-bottom: 1px solid $c-white;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}

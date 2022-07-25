@@ -544,6 +544,71 @@ body {
   }
 }
 
+.blockNav__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.blockNav__box > ul {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+}
+.blockNav__box > ul > li > a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.blockNav__box > ul > li > a:hover {
+  text-decoration: underline;
+}
+.blockNav__box > ul .dropdown {
+  position: relative;
+}
+.blockNav__box > ul .dropdown__content {
+  list-style: none;
+  display: none;
+  position: absolute;
+  background: rgba(234, 92, 68, 0.9);
+  grid-template-columns: repeat(2, 1fr);
+  transform: translate(-30rem);
+  padding: 5rem 3rem 2rem 3rem;
+  gap: 2rem;
+  width: 700px;
+}
+.blockNav__box > ul .dropdown__content a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+.blockNav__box > ul .dropdown:hover .dropdown__content {
+  display: grid;
+}
+.blockNav__logo {
+  height: 6rem;
+}
+.blockNav__input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 17rem;
+  padding: 1rem 1rem 1rem 1rem;
+  color: #fff;
+}
+.blockNav__input:focus {
+  outline: none;
+}
+.blockNav__button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin-left: -1rem;
+  border-bottom: 1px solid #fff;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
