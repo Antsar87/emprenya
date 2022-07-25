@@ -480,6 +480,27 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
+.gridSystem--icons {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 400px) {
+  .gridSystem--icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .gridSystem--icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .gridSystem--icons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.gridSystem--partners {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 240px));
+}
 .gridSystem--2-columns {
   grid-template-columns: 1fr;
 }
@@ -985,22 +1006,27 @@ body {
   max-width: 50rem;
 }
 
-.headerBlockchainv2 {
-  background: url(../../images/fondo1.jpg) no-repeat center center;
+.headerBlockchainv2,
+.bg-multicolor {
+  background: url(../../images/fondo1.jpg) no-repeat center center/cover;
 }
-.headerBlockchainv2__logo {
+.headerBlockchainv2__logo,
+.bg-multicolor__logo {
   height: 5rem;
 }
-.headerBlockchainv2__content {
+.headerBlockchainv2__content,
+.bg-multicolor__content {
   border-radius: 5rem;
 }
 @media (min-width: 900px) {
-  .headerBlockchainv2__content {
+  .headerBlockchainv2__content,
+.bg-multicolor__content {
     padding-right: 8rem;
     padding-left: 8rem;
   }
 }
-.headerBlockchainv2__subtitle {
+.headerBlockchainv2__subtitle,
+.bg-multicolor__subtitle {
   font-size: 2.8rem;
 }
 
@@ -1081,6 +1107,16 @@ body {
 
 .metaverso {
   background: url(../../images/metaverso/fondo_1.jpg) no-repeat center center/cover;
+}
+
+.partnersbox div {
+  margin-top: 4rem;
+}
+.partnersbox img {
+  height: 7rem;
+  width: 100%;
+  max-width: 24rem;
+  object-fit: contain;
 }
 
 .footer__containet.d-flex {

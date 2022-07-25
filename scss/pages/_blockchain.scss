@@ -18,8 +18,9 @@
   }
 }
 
-.headerBlockchainv2 {
-  background: url(../../images/fondo1.jpg) no-repeat center center;
+.headerBlockchainv2,
+.bg-multicolor {
+  background: url(../../images/fondo1.jpg) no-repeat center center / cover;
 
   &__logo {
     height: 5rem;
@@ -44,7 +45,8 @@
 
 .fases {
   &--ya {
-    background: url(../../images/pasarelaPago/Mesa\ de\ trabajo\ 2.jpg) no-repeat center center / cover;
+    background: url(../../images/pasarelaPago/Mesa\ de\ trabajo\ 2.jpg)
+      no-repeat center center / cover;
   }
 }
 
@@ -129,5 +131,22 @@
 }
 
 .metaverso {
-  background: url(../../images/metaverso/fondo_1.jpg) no-repeat center center / cover;
+  background: url(../../images/metaverso/fondo_1.jpg) no-repeat center center /
+    cover;
+}
+
+.partnersbox {
+
+  div {
+    margin-top: 4rem;
+  }
+  img {
+    // width: 100%;
+    // max-width: 25rem;
+    // height: 7rem;
+    height: 7rem;
+    width: 100%;
+    max-width: 24rem;
+    object-fit: contain;
+  }
 }
