@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body id="nav">
     <nav class="blockNav bg-red-dark">
       <div class="container blockNav__box">
         <img
@@ -37,7 +37,7 @@
 
         <ul>
           <li class="dropdown">
-            <a href="#">servicios</a>
+            <a href="#" class="servicio">servicios</a>
             <ul class="dropdown__content">
               <li>
                 <a href="#">Tokenización</a>
@@ -69,13 +69,17 @@
             <a href="#">quiénes somos</a>
           </li>
           <li>
-            <a href="#">contact</a>
+            <a href="#">contacto</a>
+          </li>
+          <li>
+            <input type="text" class="blockNav__input" />
+            <button class="blockNav__button">send</button>
           </li>
         </ul>
 
-        <div>
-          <input type="text" class="blockNav__input"/>
-          <button class="blockNav__button">send</button>
+        <div class="hamburguer">
+          <a href="#nav" class="hamburguer__open">abrir</a>
+          <a href="#" class="hamburguer__close">close</a>
         </div>
       </div>
     </nav>

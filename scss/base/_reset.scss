@@ -16,4 +16,28 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+
+  --state-open: scale(1);
+  --state-close: scale(0);
+  --links: translate(100%);
+
+  &:target {
+    --active: none;
+    --state-open: scale(0);
+    --state-close: scale(1);
+    --links: translate(0);
+    overflow: hidden;
+
+    @include for-size(500px) {
+      --links: translate(50%);
+    }
+
+    @include for-size("tablet-landscape-up") {
+      --links: unset;
+    }
+  }
+
+  @include for-size("tablet-landscape-up") {
+    --links: unset;
+  }
 }
