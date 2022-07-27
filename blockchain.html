@@ -24,57 +24,65 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <nav class="nav">
-      <div class="bg-blue">
-        <div
-          class="nav__top container pY-2 pX-3 d-flex justify-content-between align-items-center"
-        >
-          <a href="index.html" class="c-white">CASTELLANO</a>
+  <body id="nav">
+    <nav class="blockNav bg-red-dark">
+      <div class="container blockNav__box">
+        <img
+          src="images/blockchain_b.png"
+          loading="lazy"
+          alt=""
+          class="blockNav__logo"
+        />
 
-          <a
-            href="afiliados.html"
-            class="mL-auto mR-2 c-white text-decoration-none"
-          >
-            AFILIADOS
-          </a>
+        <ul>
+          <li class="dropdown">
+            <a href="#" class="servicio">servicios</a>
+            <ul class="dropdown__content">
+              <li>
+                <a href="blockchainv2.html">Tokenización</a>
+              </li>
+              <li>
+                <a href="#">Lanzamiento de tokens</a>
+              </li>
+              <li>
+                <a href="blockchainNft.html">NFT</a>
+              </li>
+              <li>
+                <a href="trazabilidad.html">Trazabilidad</a>
+              </li>
+              <li>
+                <a href="consultoriaBlockChain.html">Desarrollo blockchain</a>
+              </li>
+              <li>
+                <a href="metaverso.html">Metaverso</a>
+              </li>
+              <li>
+                <a href="pasarelaPago.html">Pasarelas de pago</a>
+              </li>
+              <li>
+                <a href="nativoSmart.html">Smart Contract</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">quiénes somos</a>
+          </li>
+          <li>
+            <a href="#">contacto</a>
+          </li>
+          <li>
+            <input type="text" class="blockNav__input" />
+            <button class="blockNav__button">send</button>
+          </li>
+        </ul>
 
-          <div class="registro">
-            <a href="#" class="c-white text-decoration-none"> Registro </a>
-          </div>
-          <a href="#" class="c-white text-decoration-none"> LOGIN </a>
-        </div>
-      </div>
-
-      <div
-        class="nav__center container d-flex justify-content-between align-items-center pX-2 mT-1 gap-2"
-      >
-        <div class="box--1">
-          <a href="index.html">
-            <img src="images/emprenya.png" alt="" class="logo--1" />
-          </a>
-        </div>
-        <div class="box--2 d-flex gap-2">
-          <div>
-            <a href="#">
-              <img src="images/impulsaya.png" alt="" class="logo--2" />
-            </a>
-          </div>
-          <div>
-            <a href="lanza.html">
-              <img src="images/lanzaya.png" alt="" class="logo--3" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/aprenya.png" alt="" class="logo--4" />
-            </a>
-          </div>
-          <div>
-            <a href="blockchain.html">
-              <img src="images/blockchain.png" alt="" class="logo--5" />
-            </a>
-          </div>
+        <div class="hamburguer">
+          <a href="#nav" class="hamburguer__open"
+            ><img src="images/menu.svg" alt=""
+          /></a>
+          <a href="#" class="hamburguer__close"
+            ><img src="images/close.svg" alt=""
+          /></a>
         </div>
       </div>
     </nav>
@@ -158,7 +166,6 @@
       </p>
     </article>
 
-
     <section class="mT-5">
       <div class="container bg-white pY-5">
         <div class="text-center">
@@ -241,7 +248,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="mT-9">
       <h2 class="text-center c-red fs-4 fw-300">¿Cómo lo conseguiremos?</h2>
 
@@ -436,11 +443,11 @@
         </div>
 
         <a
-        href="#"
-        class="btn btn--radiusBig bg-red-2 pX-5 pY-1 c-white fs-md fw-600 mT-5"
-      >
-        Enviar
-      </a>
+          href="#"
+          class="btn btn--radiusBig bg-red-2 pX-5 pY-1 c-white fs-md fw-600 mT-5"
+        >
+          Enviar
+        </a>
       </form>
     </section>
 

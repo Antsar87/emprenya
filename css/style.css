@@ -573,8 +573,12 @@ body:target {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem;
   padding: 1.5rem 1rem;
+}
+@media (min-width: 400px) {
+  .blockNav__box {
+    gap: 5rem;
+  }
 }
 .blockNav__box > ul {
   display: flex;
@@ -694,6 +698,7 @@ body:target {
 }
 .blockNav .hamburguer a {
   position: absolute;
+  transition: transform 1s;
 }
 .blockNav .hamburguer__open {
   transform: var(--state-open);

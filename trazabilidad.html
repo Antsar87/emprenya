@@ -24,31 +24,68 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <!-- nav -->
-    <!-- <nav class="blockchainNav bg-red-dark">
-      <div>
+  <body id="nav">
+    <nav class="blockNav bg-red-dark">
+      <div class="container blockNav__box">
         <img
           src="images/blockchain_b.png"
-          alt=""
           loading="lazy"
-          class="blockchainNav__logo"x
+          alt=""
+          class="blockNav__logo"
         />
-      </div>
 
-      <ul class="blockchain__links">
-        <li>
-          <a href="#servicios" class="c-white fs-md">servicios</a>
-        </li>
-        <li>
-          <a href="#servicios" class="c-white fs-md">servicios</a>
-        </li>
-        <li>
-          <a href="#servicios" class="c-white fs-md">servicios</a>
-        </li>
-      </ul>
-    </nav> -->
-    <!-- nav -->
+        <ul>
+          <li class="dropdown">
+            <a href="#" class="servicio">servicios</a>
+            <ul class="dropdown__content">
+              <li>
+                <a href="blockchainv2.html">Tokenización</a>
+              </li>
+              <li>
+                <a href="#">Lanzamiento de tokens</a>
+              </li>
+              <li>
+                <a href="blockchainNft.html">NFT</a>
+              </li>
+              <li>
+                <a href="trazabilidad.html">Trazabilidad</a>
+              </li>
+              <li>
+                <a href="consultoriaBlockChain.html">Desarrollo blockchain</a>
+              </li>
+              <li>
+                <a href="metaverso.html">Metaverso</a>
+              </li>
+              <li>
+                <a href="pasarelaPago.html">Pasarelas de pago</a>
+              </li>
+              <li>
+                <a href="nativoSmart.html">Smart Contract</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">quiénes somos</a>
+          </li>
+          <li>
+            <a href="#">contacto</a>
+          </li>
+          <li>
+            <input type="text" class="blockNav__input" />
+            <button class="blockNav__button">send</button>
+          </li>
+        </ul>
+
+        <div class="hamburguer">
+          <a href="#nav" class="hamburguer__open"
+            ><img src="images/menu.svg" alt=""
+          /></a>
+          <a href="#" class="hamburguer__close"
+            ><img src="images/close.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </nav>
 
     <header class="headerBlockchainv2 pY-5">
       <div class="container">

@@ -6,8 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
     padding: 1.5rem 1rem;
+
+    @include for-size('phone-only') {
+      gap: 5rem;
+    }
 
     & > ul {
       display: flex;
@@ -141,6 +144,7 @@
 
     a {
       position: absolute;
+      transition: transform 1s;
     }
 
     &__open {
