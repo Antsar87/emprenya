@@ -33,5 +33,10 @@
     &--webs {
       height: 30rem;
     }
+
+    &--small {
+      max-height: 20rem;
+      width: unset;
+    }
   }
 }

@@ -20,7 +20,7 @@
 
 .headerBlockchainv2,
 .bg-multicolor {
-  background: url(../../images/fondo1.jpg) no-repeat center center / cover;
+  background: url(../images/fondo1.jpg) no-repeat center center / cover;
 
   &__logo {
     height: 5rem;
@@ -40,7 +40,8 @@
 }
 
 .tokenizar {
-  background: url(../images/blockchainv2/fondo.jpg);
+  background: url(../images/blockchainv2/fondo.jpg) no-repeat center center /
+    cover;
 }
 
 .fases {
@@ -136,7 +137,6 @@
 }
 
 .partnersbox {
-
   div {
     margin-top: 4rem;
   }

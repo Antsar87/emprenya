@@ -814,6 +814,10 @@ body:target {
 .columns__img--webs {
   height: 30rem;
 }
+.columns__img--small {
+  max-height: 20rem;
+  width: unset;
+}
 
 .flexContainer {
   flex-direction: column;
@@ -1172,7 +1176,7 @@ body:target {
 
 .headerBlockchainv2,
 .bg-multicolor {
-  background: url(../../images/fondo1.jpg) no-repeat center center/cover;
+  background: url(../images/fondo1.jpg) no-repeat center center/cover;
 }
 .headerBlockchainv2__logo,
 .bg-multicolor__logo {
@@ -1195,7 +1199,7 @@ body:target {
 }
 
 .tokenizar {
-  background: url(../images/blockchainv2/fondo.jpg);
+  background: url(../images/blockchainv2/fondo.jpg) no-repeat center center/cover;
 }
 
 .fases--ya {
