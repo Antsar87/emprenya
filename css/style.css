@@ -173,6 +173,10 @@ body:target {
   margin-right: 2rem;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
 .d-block {
   display: block;
 }
@@ -207,6 +211,10 @@ body:target {
 
 .align-items-center {
   align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .gap-1 {
@@ -1175,26 +1183,31 @@ body:target {
 }
 
 .headerBlockchainv2,
-.bg-multicolor {
+.bg-multicolor,
+.diferencias__title {
   background: url(../images/fondo1.jpg) no-repeat center center/cover;
 }
 .headerBlockchainv2__logo,
-.bg-multicolor__logo {
+.bg-multicolor__logo,
+.diferencias__title__logo {
   height: 5rem;
 }
 .headerBlockchainv2__content,
-.bg-multicolor__content {
+.bg-multicolor__content,
+.diferencias__title__content {
   border-radius: 5rem;
 }
 @media (min-width: 900px) {
   .headerBlockchainv2__content,
-.bg-multicolor__content {
+.bg-multicolor__content,
+.diferencias__title__content {
     padding-right: 8rem;
     padding-left: 8rem;
   }
 }
 .headerBlockchainv2__subtitle,
-.bg-multicolor__subtitle {
+.bg-multicolor__subtitle,
+.diferencias__title__subtitle {
   font-size: 2.8rem;
 }
 
@@ -1285,6 +1298,42 @@ body:target {
   width: 100%;
   max-width: 24rem;
   object-fit: contain;
+}
+
+.desarrollochain__logo {
+  height: 8rem;
+}
+.desarrollochain__logo--fedex {
+  height: 5rem;
+}
+.desarrollochain__logo--morgan {
+  height: 5rem;
+}
+
+.diferencias__title {
+  margin-left: 3rem;
+}
+.diferencias__check {
+  height: 3rem;
+  display: none;
+}
+@media (min-width: 400px) {
+  .diferencias__check {
+    display: block;
+  }
+}
+.diferencias__box {
+  margin-top: -2rem;
+}
+.diferencias__content {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  padding-left: 3.5rem;
+  border-left: dashed 1px #EA5C44;
+  min-height: 7rem;
+}
+.diferencias__content p {
+  padding-top: 0;
 }
 
 .footer__containet.d-flex {

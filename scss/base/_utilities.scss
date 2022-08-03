@@ -125,6 +125,11 @@
 }
 
 // ! Display
+
+.d-inline-block {
+  display: inline-block;
+}
+
 .d-block {
   display: block;
 }
@@ -161,6 +166,9 @@
   align-items: center;
 }
 
+.flex-1 {
+  flex: 1;
+}
 // !gap
 .gap-1 {
   gap: 1rem;

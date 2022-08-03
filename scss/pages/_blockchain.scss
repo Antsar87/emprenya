@@ -19,7 +19,8 @@
 }
 
 .headerBlockchainv2,
-.bg-multicolor {
+.bg-multicolor,
+.diferencias__title {
   background: url(../images/fondo1.jpg) no-repeat center center / cover;
 
   &__logo {
@@ -141,12 +142,55 @@
     margin-top: 4rem;
   }
   img {
-    // width: 100%;
-    // max-width: 25rem;
-    // height: 7rem;
     height: 7rem;
     width: 100%;
     max-width: 24rem;
     object-fit: contain;
+  }
+}
+
+.desarrollochain {
+  &__logo {
+    height: 8rem;
+
+    &--fedex {
+      height: 5rem;
+    }
+
+    &--morgan {
+      height: 5rem;
+    }
+  }
+}
+
+.diferencias {
+  &__title {
+    margin-left: 3rem;
+  }
+
+  &__check {
+    height: 3rem;
+
+    display: none;
+
+    @include for-size('phone-only') {
+      display: block;
+    }
+  }
+
+  &__box {
+    margin-top: -2rem;
+  }
+
+  &__content {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    padding-left: 3.5rem;
+    border-left: dashed 1px $c-red-dark;
+    min-height: 7rem;
+
+    p {
+      padding-top: 0;
+    }
   }
 }
