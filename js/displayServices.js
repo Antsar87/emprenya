@@ -2,6 +2,8 @@ const html = document.querySelector('html');
 
 const hamburguer = document.querySelector('.hamburguer');
 
+const body = document.querySelector('body');
+
 const servicio = document.querySelector('.servicio');
 
 const dropdown__content = document.querySelector('.dropdown__content');
@@ -13,6 +15,12 @@ let clickHamburguer = false;
 // Sirve para agregarle hidden al html y no se pueda hacer scroll cuando se activa el menu
 hamburguer.addEventListener('click', () => {
   html.style.overflow = clickHamburguer ? '' : 'hidden';
+
+  body.style.overflow = clickHamburguer ? '' : 'hidden';
+
+  html.style.touchAction = clickHamburguer ? '' : 'none';
+
+  body.style.touchAction = clickHamburguer ? '' : 'none';
 
   clickHamburguer = !clickHamburguer;
 });
